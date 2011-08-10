@@ -1,0 +1,19 @@
+== Simple EventMachine proxy daemon using connection pool with EM queue and with example how to test it
+
+Dependencies
+'eventmachine'
+'daemons'
+
+1) start server ( ruby start_server.rb )
+Server emulates random time spent on proccessing requests ( through add_timer)
+
+2) start daemon ( ruby start_daemon.rb )
+You can pass -d param to daemonize it (than u can stop it this ruby stop.rb)
+
+3) start client ( ruby start_clients.rb )
+This will emulate many clients connection 
+You can change that number by passing number as argument
+
+ 
+
+

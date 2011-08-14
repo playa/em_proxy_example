@@ -2,7 +2,7 @@ require 'eventmachine'
 require File.expand_path('../lib/client.rb',__FILE__)
 #emulate many clients
 #tc => connection number arg
-tc = ARGV[0].to_i if ARGV[0]
+tc = ARGV[0].to_i
 TOTAL_CONNECTIONS = tc > 0 ? tc : 25
 
 file = File.expand_path('../tmp/daemon.sock',__FILE__)
